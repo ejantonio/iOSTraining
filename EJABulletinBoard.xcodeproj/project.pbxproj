@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445141381A369D400045EF2E /* logInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445141371A369D400045EF2E /* logInView.xib */; };
+		4451413B1A36A3490045EF2E /* EBBLogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451413A1A36A3490045EF2E /* EBBLogInView.m */; };
+		4451413E1A36A6720045EF2E /* EBBBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451413D1A36A6720045EF2E /* EBBBaseUIViewController.m */; };
+		445141411A36A6B80045EF2E /* EBBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141401A36A6B80045EF2E /* EBBLogInViewController.m */; };
+		445141461A37E89C0045EF2E /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445141451A37E89C0045EF2E /* HomeView.xib */; };
+		445141491A37ED860045EF2E /* EBBHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141481A37ED860045EF2E /* EBBHomeView.m */; };
+		4451414C1A37EF220045EF2E /* EBBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451414B1A37EF220045EF2E /* EBBHomeViewController.m */; };
+		445141501A37F6450045EF2E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4451414F1A37F6450045EF2E /* PostTableViewCell.xib */; };
+		445141531A37F7540045EF2E /* EBBPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141521A37F7540045EF2E /* EBBPostTableViewCell.m */; };
+		445141591A391D8D0045EF2E /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445141581A391D8D0045EF2E /* DetailsView.xib */; };
+		4451415C1A391E580045EF2E /* EBBDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451415B1A391E580045EF2E /* EBBDetailsView.m */; };
+		445141621A3922500045EF2E /* EBBDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141611A3922500045EF2E /* EBBDetailsViewController.m */; };
+		445141641A392C790045EF2E /* PostFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445141631A392C790045EF2E /* PostFormView.xib */; };
+		445141671A392DBA0045EF2E /* EBBPostFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141661A392DBA0045EF2E /* EBBPostFormView.m */; };
+		4451416A1A392E460045EF2E /* EBBPostFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141691A392E460045EF2E /* EBBPostFormViewController.m */; };
+		4451416C1A3960070045EF2E /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4451416B1A3960070045EF2E /* CommentsTableViewCell.xib */; };
+		4451416F1A3961180045EF2E /* EBBCommentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451416E1A3961180045EF2E /* EBBCommentsTableViewCell.m */; };
+		445141721A396EEA0045EF2E /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141711A396EEA0045EF2E /* Post.m */; };
+		445141751A396EEB0045EF2E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141741A396EEB0045EF2E /* Comment.m */; };
 		4462765F1A36981800EC1ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4462765E1A36981800EC1ABE /* main.m */; };
 		446276621A36981800EC1ABE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446276611A36981800EC1ABE /* AppDelegate.m */; };
 		446276651A36981800EC1ABE /* EJABulletinBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 446276631A36981800EC1ABE /* EJABulletinBoard.xcdatamodeld */; };
@@ -28,6 +47,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		445141371A369D400045EF2E /* logInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = logInView.xib; path = Xibs/logInView.xib; sourceTree = "<group>"; };
+		445141391A36A3490045EF2E /* EBBLogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBLogInView.h; path = Views/EBBLogInView.h; sourceTree = "<group>"; };
+		4451413A1A36A3490045EF2E /* EBBLogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBLogInView.m; path = Views/EBBLogInView.m; sourceTree = "<group>"; };
+		4451413C1A36A6720045EF2E /* EBBBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBBaseUIViewController.h; path = Controllers/EBBBaseUIViewController.h; sourceTree = "<group>"; };
+		4451413D1A36A6720045EF2E /* EBBBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBBaseUIViewController.m; path = Controllers/EBBBaseUIViewController.m; sourceTree = "<group>"; };
+		4451413F1A36A6B80045EF2E /* EBBLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBLogInViewController.h; path = Controllers/EBBLogInViewController.h; sourceTree = "<group>"; };
+		445141401A36A6B80045EF2E /* EBBLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBLogInViewController.m; path = Controllers/EBBLogInViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		445141451A37E89C0045EF2E /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeView.xib; path = Xibs/HomeView.xib; sourceTree = "<group>"; };
+		445141471A37ED860045EF2E /* EBBHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBHomeView.h; path = Views/EBBHomeView.h; sourceTree = "<group>"; };
+		445141481A37ED860045EF2E /* EBBHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBHomeView.m; path = Views/EBBHomeView.m; sourceTree = "<group>"; };
+		4451414A1A37EF220045EF2E /* EBBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBHomeViewController.h; path = Controllers/EBBHomeViewController.h; sourceTree = "<group>"; };
+		4451414B1A37EF220045EF2E /* EBBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBHomeViewController.m; path = Controllers/EBBHomeViewController.m; sourceTree = "<group>"; };
+		4451414F1A37F6450045EF2E /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		445141511A37F7540045EF2E /* EBBPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBPostTableViewCell.h; path = Views/EBBPostTableViewCell.h; sourceTree = "<group>"; };
+		445141521A37F7540045EF2E /* EBBPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBPostTableViewCell.m; path = Views/EBBPostTableViewCell.m; sourceTree = "<group>"; };
+		445141581A391D8D0045EF2E /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailsView.xib; path = Xibs/DetailsView.xib; sourceTree = "<group>"; };
+		4451415A1A391E580045EF2E /* EBBDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBDetailsView.h; path = Views/EBBDetailsView.h; sourceTree = "<group>"; };
+		4451415B1A391E580045EF2E /* EBBDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBDetailsView.m; path = Views/EBBDetailsView.m; sourceTree = "<group>"; };
+		445141601A3922500045EF2E /* EBBDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBDetailsViewController.h; path = Controllers/EBBDetailsViewController.h; sourceTree = "<group>"; };
+		445141611A3922500045EF2E /* EBBDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBDetailsViewController.m; path = Controllers/EBBDetailsViewController.m; sourceTree = "<group>"; };
+		445141631A392C790045EF2E /* PostFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostFormView.xib; path = Xibs/PostFormView.xib; sourceTree = "<group>"; };
+		445141651A392DBA0045EF2E /* EBBPostFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBPostFormView.h; path = Views/EBBPostFormView.h; sourceTree = "<group>"; };
+		445141661A392DBA0045EF2E /* EBBPostFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBPostFormView.m; path = Views/EBBPostFormView.m; sourceTree = "<group>"; };
+		445141681A392E460045EF2E /* EBBPostFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBPostFormViewController.h; path = Controllers/EBBPostFormViewController.h; sourceTree = "<group>"; };
+		445141691A392E460045EF2E /* EBBPostFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBPostFormViewController.m; path = Controllers/EBBPostFormViewController.m; sourceTree = "<group>"; };
+		4451416B1A3960070045EF2E /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentsTableViewCell.xib; path = Xibs/CommentsTableViewCell.xib; sourceTree = "<group>"; };
+		4451416D1A3961180045EF2E /* EBBCommentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBCommentsTableViewCell.h; path = Views/EBBCommentsTableViewCell.h; sourceTree = "<group>"; };
+		4451416E1A3961180045EF2E /* EBBCommentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBCommentsTableViewCell.m; path = Views/EBBCommentsTableViewCell.m; sourceTree = "<group>"; };
+		445141701A396EEA0045EF2E /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Model/Post.h; sourceTree = "<group>"; };
+		445141711A396EEA0045EF2E /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Model/Post.m; sourceTree = "<group>"; };
+		445141731A396EEB0045EF2E /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Model/Comment.h; sourceTree = "<group>"; };
+		445141741A396EEB0045EF2E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Model/Comment.m; sourceTree = "<group>"; };
 		446276591A36981800EC1ABE /* EJABulletinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EJABulletinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4462765D1A36981800EC1ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4462765E1A36981800EC1ABE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +134,10 @@
 		4462765B1A36981800EC1ABE /* EJABulletinBoard */ = {
 			isa = PBXGroup;
 			children = (
+				446276881A3699DF00EC1ABE /* Xibs */,
+				446276871A3699D300EC1ABE /* Views */,
+				446276861A3699C600EC1ABE /* Models */,
+				446276851A3699B700EC1ABE /* Controllers */,
 				446276601A36981800EC1ABE /* AppDelegate.h */,
 				446276611A36981800EC1ABE /* AppDelegate.m */,
 				446276661A36981800EC1ABE /* ViewController.h */,
@@ -120,6 +175,66 @@
 				4462767A1A36981800EC1ABE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		446276851A3699B700EC1ABE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4451413C1A36A6720045EF2E /* EBBBaseUIViewController.h */,
+				445141601A3922500045EF2E /* EBBDetailsViewController.h */,
+				445141611A3922500045EF2E /* EBBDetailsViewController.m */,
+				4451413D1A36A6720045EF2E /* EBBBaseUIViewController.m */,
+				4451413F1A36A6B80045EF2E /* EBBLogInViewController.h */,
+				445141681A392E460045EF2E /* EBBPostFormViewController.h */,
+				445141691A392E460045EF2E /* EBBPostFormViewController.m */,
+				445141401A36A6B80045EF2E /* EBBLogInViewController.m */,
+				4451414A1A37EF220045EF2E /* EBBHomeViewController.h */,
+				4451414B1A37EF220045EF2E /* EBBHomeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		446276861A3699C600EC1ABE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				445141731A396EEB0045EF2E /* Comment.h */,
+				445141741A396EEB0045EF2E /* Comment.m */,
+				445141701A396EEA0045EF2E /* Post.h */,
+				445141711A396EEA0045EF2E /* Post.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		446276871A3699D300EC1ABE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				445141391A36A3490045EF2E /* EBBLogInView.h */,
+				4451415A1A391E580045EF2E /* EBBDetailsView.h */,
+				4451415B1A391E580045EF2E /* EBBDetailsView.m */,
+				445141511A37F7540045EF2E /* EBBPostTableViewCell.h */,
+				445141651A392DBA0045EF2E /* EBBPostFormView.h */,
+				4451416D1A3961180045EF2E /* EBBCommentsTableViewCell.h */,
+				4451416E1A3961180045EF2E /* EBBCommentsTableViewCell.m */,
+				445141661A392DBA0045EF2E /* EBBPostFormView.m */,
+				445141521A37F7540045EF2E /* EBBPostTableViewCell.m */,
+				4451413A1A36A3490045EF2E /* EBBLogInView.m */,
+				445141471A37ED860045EF2E /* EBBHomeView.h */,
+				445141481A37ED860045EF2E /* EBBHomeView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		446276881A3699DF00EC1ABE /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				445141371A369D400045EF2E /* logInView.xib */,
+				4451414F1A37F6450045EF2E /* PostTableViewCell.xib */,
+				445141581A391D8D0045EF2E /* DetailsView.xib */,
+				4451416B1A3960070045EF2E /* CommentsTableViewCell.xib */,
+				445141631A392C790045EF2E /* PostFormView.xib */,
+				445141451A37E89C0045EF2E /* HomeView.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +281,7 @@
 		446276511A36981800EC1ABE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EBB;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Errol John Antonio";
 				TargetAttributes = {
@@ -204,7 +320,13 @@
 			files = (
 				4462766B1A36981800EC1ABE /* Main.storyboard in Resources */,
 				446276701A36981800EC1ABE /* LaunchScreen.xib in Resources */,
+				4451416C1A3960070045EF2E /* CommentsTableViewCell.xib in Resources */,
+				445141591A391D8D0045EF2E /* DetailsView.xib in Resources */,
+				445141381A369D400045EF2E /* logInView.xib in Resources */,
+				445141501A37F6450045EF2E /* PostTableViewCell.xib in Resources */,
 				4462766D1A36981800EC1ABE /* Images.xcassets in Resources */,
+				445141641A392C790045EF2E /* PostFormView.xib in Resources */,
+				445141461A37E89C0045EF2E /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +345,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				446276651A36981800EC1ABE /* EJABulletinBoard.xcdatamodeld in Sources */,
+				4451415C1A391E580045EF2E /* EBBDetailsView.m in Sources */,
+				445141491A37ED860045EF2E /* EBBHomeView.m in Sources */,
 				446276621A36981800EC1ABE /* AppDelegate.m in Sources */,
+				445141751A396EEB0045EF2E /* Comment.m in Sources */,
+				4451416A1A392E460045EF2E /* EBBPostFormViewController.m in Sources */,
 				446276681A36981800EC1ABE /* ViewController.m in Sources */,
+				445141411A36A6B80045EF2E /* EBBLogInViewController.m in Sources */,
+				445141721A396EEA0045EF2E /* Post.m in Sources */,
+				4451413B1A36A3490045EF2E /* EBBLogInView.m in Sources */,
 				4462765F1A36981800EC1ABE /* main.m in Sources */,
+				4451416F1A3961180045EF2E /* EBBCommentsTableViewCell.m in Sources */,
+				4451413E1A36A6720045EF2E /* EBBBaseUIViewController.m in Sources */,
+				445141671A392DBA0045EF2E /* EBBPostFormView.m in Sources */,
+				4451414C1A37EF220045EF2E /* EBBHomeViewController.m in Sources */,
+				445141531A37F7540045EF2E /* EBBPostTableViewCell.m in Sources */,
+				445141621A3922500045EF2E /* EBBDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +487,7 @@
 				INFOPLIST_FILE = EJABulletinBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +498,7 @@
 				INFOPLIST_FILE = EJABulletinBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +555,7 @@
 				446276811A36981800EC1ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446276821A36981800EC1ABE /* Build configuration list for PBXNativeTarget "EJABulletinBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +564,7 @@
 				446276841A36981800EC1ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
