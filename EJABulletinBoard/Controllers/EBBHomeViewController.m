@@ -15,7 +15,7 @@
 @interface EBBHomeViewController (){
     NSString *username;
     NSString *welcomeRemark;
-    
+
     NSMutableArray *titles;
     NSMutableArray *posts;
     NSMutableArray *users;
@@ -34,30 +34,28 @@
     self.HomeView.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:self.HomeView];
     
-    
     self.navigationItem.hidesBackButton = YES;
-    
-
     
     //Set Delegates
     self.HomeView.delegate=self;
     self.HomeView.tableView.delegate = self;
     self.HomeView.tableView.dataSource = self;
-      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //Declaration of NSUSerDefaults
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     username = [defaults objectForKey:@"username"];
     welcomeRemark = @"Hello, ";
     
     self.HomeView.profileName.text = [welcomeRemark stringByAppendingString: username];
     
-    
 
     if ([defaults objectForKey:@"isFirstRun"] == nil){
         [defaults setObject:@"YES" forKey:@"isFirstRun"];
         
-//        titles = [[NSMutableArray alloc] initWithObjects: @"MANILA at SIGNAL 2", @"CD Christmas Party", nil];
-//        posts = [[NSMutableArray alloc] initWithObjects:@"Everyone is advised to WFH.", @"Let's Celebrate on the 17th!", nil];
-//        users = [[NSMutableArray alloc] initWithObjects: @"Earth M.", @"Errol A.", nil];
+        // titles = [[NSMutableArray alloc] initWithObjects: @"MANILA at SIGNAL 2", @"CD Christmas Party", nil];
+        // posts = [[NSMutableArray alloc] initWithObjects:@"Everyone is advised to WFH.", @"Let's Celebrate on the 17th!", nil];
+        // users = [[NSMutableArray alloc] initWithObjects: @"Earth M.", @"Errol A.", nil];
         
         [defaults setObject:titles forKey:@"titles"];
         [defaults setObject:posts forKey:@"posts"];
@@ -66,13 +64,12 @@
         [defaults synchronize];
         
 
-//        [defaults objectForKey:@"titles"];
-//        [defaults objectForKey:@"posts"];
-//        [defaults objectForKey:@"users"];
-//
-//        
+        // [defaults objectForKey:@"titles"];
+        // [defaults objectForKey:@"posts"];
+        // [defaults objectForKey:@"users"];
 
     }
+    
     if ([username isEqualToString:@"errol"]){
         self.HomeView.profileImage.image = [UIImage imageNamed:@"errol"];
     }
@@ -87,11 +84,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-//- (void) getUsername: (NSString *) username{
-//    NSLog(@"get USerName %@", username );
-//    usernameGlobal = username;
-//}
 
 -(void) addPostButtonPressed{
 
@@ -116,7 +108,7 @@
 //    
 //    [self.HomeView.tableView reloadData];
     
-        [self performSegueWithIdentifier:@"HomeToFormSegue" sender:self];
+      [self performSegueWithIdentifier:@"HomeToFormSegue" sender:self];
 }
 
 -(void) logoutButtonPressed{
@@ -154,7 +146,6 @@
 //        NSMutableArray *persistentPosts = [[defaults arrayForKey:@"posts"]mutableCopy];
 //        NSMutableArray *persistentUsers = [[defaults arrayForKey:@"users"]mutableCopy];
         
-        
 //        postCell.postTitle.text =[persistentTitles objectAtIndex:indexPath.row];
 //        postCell.postPosts.text =[persistentPosts objectAtIndex:indexPath.row];
 //        postCell.postUser.text =[persistentUsers objectAtIndex:indexPath.row];
@@ -166,8 +157,9 @@
         postCell.postUser.text = post.user;
         
         
-//        NSArray *currentPostArray = [[NSArray alloc] initWithObjects:post.title, post.body, post.user, nil];
-//        [defaults setObject:currentPostArray forKey:@"currentPostArray"];
+//       NSArray *currentPostArray = [[NSArray alloc] initWithObjects:post.title, post.body, post.user, nil];
+//       [defaults setObject:currentPostArray forKey:@"currentPostArray"];
+        
         return postCell;
     }
         return nil;
@@ -190,16 +182,17 @@
 //    NSMutableArray *persistentUsers = [[defaults arrayForKey:@"users"]mutableCopy];
     
 //    NSString *currentTitle = [persistentTitles objectAtIndex:indexPath.row];
-//     NSString *currentPosts = [persistentPosts objectAtIndex:indexPath.row];
-//     NSString *currentUsers = [persistentUsers objectAtIndex:indexPath.row];
+//    NSString *currentPosts = [persistentPosts objectAtIndex:indexPath.row];
+//    NSString *currentUsers = [persistentUsers objectAtIndex:indexPath.row];
     
+    NSString *row = @(indexPath.row).stringValue;
     [defaults setObject:post.title forKey:@"currentTitle"];
     [defaults setObject:post.body forKey:@"currentPosts"];
     [defaults setObject:post.user forKey:@"currentUsers"];
     
     [defaults synchronize];
     
-    
+    [defaults setObject:row forKey:@"index"];
     
     [self performSegueWithIdentifier:@"PostToDetailsSegue" sender:self];
 

@@ -53,7 +53,6 @@
     NSString *msgTitleErrror = @"Title must only contain a maximum of 20 characters.";
     NSString *title = self.PostFormView.titleField.text;
     NSString *body = self.PostFormView.descriptionField.text;
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
     if ([title isEqual:@""] || [body isEqual:@""] ){
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Ooooops!" message:msgError delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -74,9 +73,8 @@
 
         self.PostFormView.titleField.text=@"";
         self.PostFormView.descriptionField.text=@"";
-        
-        
-        
+        }
+
 //        NSString *username = [defaults objectForKey:@"username"];
 //        NSMutableArray *mutableCopyTitles = [[defaults arrayForKey:@"titles"]mutableCopy];
 //        NSMutableArray *mutableCopyPosts  = [[defaults arrayForKey:@"posts"]mutableCopy];
@@ -92,9 +90,7 @@
 //        
 //        [defaults synchronize];
         
-        //Get textfield Value
-        
-        
+        // Get TextField Values
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSString *username = [defaults objectForKey:@"username"];
         
@@ -116,16 +112,9 @@
             NSLog(@"%@ %@", error, error.localizedDescription);
         }
         }
-            [self.navigationController popViewControllerAnimated:YES];
-
-    }
-
     
-
-    
-    
-    
-    
+        //[self.navigationController popViewControllerAnimated:YES];
+   
 }
 
 -(void) cancelButtonPressed{
@@ -134,7 +123,6 @@
     self.PostFormView.descriptionField.text=@"";
 
     [self.navigationController popViewControllerAnimated:YES];
-
 }
 
 /*

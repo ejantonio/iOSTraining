@@ -18,4 +18,15 @@
 }
 */
 
+- (void) awakeFromNib{
+    [[self.commentField layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
+    [[self.commentField  layer] setBorderWidth:.4];
+    [[self.commentField  layer] setCornerRadius:8.0f];
+    
+}
+- (IBAction)postButtonPressed:(id)sender {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(postButtonPressed)]) {
+        [self.delegate postButtonPressed];
+    }
+}
 @end

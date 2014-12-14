@@ -24,8 +24,6 @@
 		4451416A1A392E460045EF2E /* EBBPostFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141691A392E460045EF2E /* EBBPostFormViewController.m */; };
 		4451416C1A3960070045EF2E /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4451416B1A3960070045EF2E /* CommentsTableViewCell.xib */; };
 		4451416F1A3961180045EF2E /* EBBCommentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4451416E1A3961180045EF2E /* EBBCommentsTableViewCell.m */; };
-		445141721A396EEA0045EF2E /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141711A396EEA0045EF2E /* Post.m */; };
-		445141751A396EEB0045EF2E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 445141741A396EEB0045EF2E /* Comment.m */; };
 		4462765F1A36981800EC1ABE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4462765E1A36981800EC1ABE /* main.m */; };
 		446276621A36981800EC1ABE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446276611A36981800EC1ABE /* AppDelegate.m */; };
 		446276651A36981800EC1ABE /* EJABulletinBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 446276631A36981800EC1ABE /* EJABulletinBoard.xcdatamodeld */; };
@@ -34,6 +32,8 @@
 		4462766D1A36981800EC1ABE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4462766C1A36981800EC1ABE /* Images.xcassets */; };
 		446276701A36981800EC1ABE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4462766E1A36981800EC1ABE /* LaunchScreen.xib */; };
 		4462767C1A36981800EC1ABE /* EJABulletinBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4462767B1A36981800EC1ABE /* EJABulletinBoardTests.m */; };
+		446423831A3DCA07005F4E78 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 446423821A3DCA07005F4E78 /* Post.m */; };
+		446423861A3DCA08005F4E78 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 446423851A3DCA08005F4E78 /* Comment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +75,6 @@
 		4451416B1A3960070045EF2E /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentsTableViewCell.xib; path = Xibs/CommentsTableViewCell.xib; sourceTree = "<group>"; };
 		4451416D1A3961180045EF2E /* EBBCommentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBBCommentsTableViewCell.h; path = Views/EBBCommentsTableViewCell.h; sourceTree = "<group>"; };
 		4451416E1A3961180045EF2E /* EBBCommentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EBBCommentsTableViewCell.m; path = Views/EBBCommentsTableViewCell.m; sourceTree = "<group>"; };
-		445141701A396EEA0045EF2E /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Model/Post.h; sourceTree = "<group>"; };
-		445141711A396EEA0045EF2E /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Model/Post.m; sourceTree = "<group>"; };
-		445141731A396EEB0045EF2E /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Model/Comment.h; sourceTree = "<group>"; };
-		445141741A396EEB0045EF2E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Model/Comment.m; sourceTree = "<group>"; };
 		446276591A36981800EC1ABE /* EJABulletinBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EJABulletinBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4462765D1A36981800EC1ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4462765E1A36981800EC1ABE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +89,10 @@
 		446276751A36981800EC1ABE /* EJABulletinBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EJABulletinBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4462767A1A36981800EC1ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4462767B1A36981800EC1ABE /* EJABulletinBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EJABulletinBoardTests.m; sourceTree = "<group>"; };
+		446423811A3DCA07005F4E78 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Models/Post.h; sourceTree = "<group>"; };
+		446423821A3DCA07005F4E78 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Models/Post.m; sourceTree = "<group>"; };
+		446423841A3DCA08005F4E78 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Models/Comment.h; sourceTree = "<group>"; };
+		446423851A3DCA08005F4E78 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Models/Comment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,10 +197,10 @@
 		446276861A3699C600EC1ABE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				445141731A396EEB0045EF2E /* Comment.h */,
-				445141741A396EEB0045EF2E /* Comment.m */,
-				445141701A396EEA0045EF2E /* Post.h */,
-				445141711A396EEA0045EF2E /* Post.m */,
+				446423841A3DCA08005F4E78 /* Comment.h */,
+				446423851A3DCA08005F4E78 /* Comment.m */,
+				446423811A3DCA07005F4E78 /* Post.h */,
+				446423821A3DCA07005F4E78 /* Post.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -348,11 +348,11 @@
 				4451415C1A391E580045EF2E /* EBBDetailsView.m in Sources */,
 				445141491A37ED860045EF2E /* EBBHomeView.m in Sources */,
 				446276621A36981800EC1ABE /* AppDelegate.m in Sources */,
-				445141751A396EEB0045EF2E /* Comment.m in Sources */,
+				446423861A3DCA08005F4E78 /* Comment.m in Sources */,
 				4451416A1A392E460045EF2E /* EBBPostFormViewController.m in Sources */,
 				446276681A36981800EC1ABE /* ViewController.m in Sources */,
 				445141411A36A6B80045EF2E /* EBBLogInViewController.m in Sources */,
-				445141721A396EEA0045EF2E /* Post.m in Sources */,
+				446423831A3DCA07005F4E78 /* Post.m in Sources */,
 				4451413B1A36A3490045EF2E /* EBBLogInView.m in Sources */,
 				4462765F1A36981800EC1ABE /* main.m in Sources */,
 				4451416F1A3961180045EF2E /* EBBCommentsTableViewCell.m in Sources */,

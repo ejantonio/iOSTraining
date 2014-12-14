@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol EBBDetailsViewDelegate <NSObject>
 
+@required
+- (void) postButtonPressed;
+
+@end
 
 @interface EBBDetailsView : UIView
 
@@ -21,7 +26,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *commentField;
 @property (weak, nonatomic) IBOutlet UIButton *postButton;
-@property (weak, nonatomic) IBOutlet UIButton *postButtonPressed;
+
+- (IBAction)postButtonPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (strong) id<EBBDetailsViewDelegate> delegate;
 @end

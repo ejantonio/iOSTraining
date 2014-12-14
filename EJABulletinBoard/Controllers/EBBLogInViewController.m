@@ -21,28 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    //Set-Up Layout
-    
-    
+
     //Load Xib into view
     self.loginView = (EBBLogInView *) [self getCustomXibUsingXibName:@"logInView"];
-    
-       self.loginView.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height);
+    self.loginView.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height);
     
     //Add login view to view
     [self.view addSubview:self.loginView];
+    
     //Set Delegates
     self.loginView.usernameTextField.delegate = self;
     self.loginView.passwordTextField.delegate=self;
     self.loginView.delegate=self;
     
     [self registerForKeyboardNotifications];
-
-
-        [self.loginView.usernameTextField becomeFirstResponder];
+    [self.loginView.usernameTextField becomeFirstResponder];
     
+    //Hard-coded usernames and passwords
     users = [[NSArray alloc] initWithObjects: @"errol", @"john", nil];
     password = [[NSMutableArray alloc] initWithObjects:@"123", @"456", nil];
 }
@@ -76,7 +71,6 @@
     [textField resignFirstResponder];
     return YES;
 }
-
 
 
 #pragma mark - Keyboard
@@ -114,7 +108,9 @@
     NSLog(@"Log in Button Pressed");
    inputUsername = self.loginView.usernameTextField.text;
     inputPassword = self.loginView.passwordTextField.text;
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //TextFields Input Validations
     if (![inputUsername isEqual:@""] && ![inputPassword isEqual:@""]){
         
         if ([users containsObject:inputUsername] && [password containsObject:inputPassword]){
@@ -136,7 +132,7 @@
             }
         }
         else{
-            NSString *msg = @"Wrong username ans password.";
+            NSString *msg = @"Wrong username and/or password.";
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oooopss!" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertView show];
             [self.loginView.usernameTextField becomeFirstResponder];
@@ -151,12 +147,8 @@
         
     }
 
-
 }
 
-//- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-//    [segue.destinationViewController getUsername:inputUsername];
-//}
 
 /*
 #pragma mark - Navigation

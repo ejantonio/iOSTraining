@@ -8,8 +8,9 @@
 
 #import "EBBBaseUIViewController.h"
 #import "EBBDetailsView.h"
+#import "EBBCommentsTableViewCell.h"
 
-@interface EBBDetailsViewController : EBBBaseUIViewController
+@interface EBBDetailsViewController : EBBBaseUIViewController <EBBDetailsViewDelegate, UITabBarDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property (strong,nonatomic) EBBDetailsView *DetailsView;
 @end
