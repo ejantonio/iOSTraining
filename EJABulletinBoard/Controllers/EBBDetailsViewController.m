@@ -252,7 +252,9 @@
                 NSLog(@"%@ %@", error, error.localizedDescription);
             }
         
-            [self.navigationController popViewControllerAnimated:YES];
+            [self.DetailsView.commentsTable reloadData];
+        
+           // [self.navigationController popViewControllerAnimated:YES];
         
     }
     
